@@ -152,7 +152,7 @@ int conta(plist  p){
     if(p==NULL) return 0;
     int c=0;
     while(p->next!=NULL){
-       if(p->info == p->next->info)
+       if(p->info < p->next->info)
         c++;
     p=p->next;
     }
