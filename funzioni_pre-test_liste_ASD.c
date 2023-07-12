@@ -95,11 +95,11 @@ int conta(plist p){
 int is_crescente(plist p){
     if(p==NULL) return 0;
     while(p->next!=NULL){
-        if(p->info<p->next->info)
-          return 1;
+        if(p->info>p->next->info)
+          return 0;
     p=p->next;
     }
-    return 0;
+    return 1;
 }
 
 
